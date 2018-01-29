@@ -4,7 +4,7 @@ project(scitos_msgs)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-find_package(catkin REQUIRED COMPONENTS actionlib_msgs geometry_msgs message_generation std_msgs)
+find_package(catkin REQUIRED COMPONENTS actionlib_msgs geometry_msgs message_generation sensor_msgs std_msgs)
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -52,6 +52,7 @@ generate_messages(
    DEPENDENCIES
    actionlib_msgs
    geometry_msgs
+   sensor_msgs
    std_msgs
 )
 
@@ -66,7 +67,7 @@ generate_messages(
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES scitos_msgs
-  CATKIN_DEPENDS actionlib_msgs geometry_msgs message_runtime std_msgs
+  CATKIN_DEPENDS actionlib_msgs geometry_msgs message_runtime sensor_msgs std_msgs
 #  DEPENDS system_lib
 )
 
