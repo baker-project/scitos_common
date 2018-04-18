@@ -1,8 +1,11 @@
-# waypoints of the path [m]
-geometry_msgs/PoseStamped[] target_poses
+# an image of the full map of the environment
+sensor_msgs/Image map
 
 # an image depicting a map of the area which is covered by the path or which the robot is allowed to drive at for obstacle avoidance
 sensor_msgs/Image area_map
+
+# an (optional) image showing the already covered areas (0=not covered, 255=covered)
+sensor_msgs/Image coverage_map
 
 # position tolerance at each waypoint, i.e. the acceptable deviation from the given path [m]
 float32 path_tolerance
