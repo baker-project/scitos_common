@@ -21,7 +21,9 @@ find_package(catkin REQUIRED COMPONENTS actionlib_msgs geometry_msgs message_gen
 ## Generate actions in the 'action' folder
 add_action_files(
   DIRECTORY action
-  FILES MoveBasePath.action
+  FILES
+    MoveBasePath.action
+    MoveBaseWallFollow.action
 )
 
 ## Generate messages in the 'msg' folder
