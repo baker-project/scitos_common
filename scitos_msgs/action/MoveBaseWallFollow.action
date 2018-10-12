@@ -19,6 +19,12 @@ float32 goal_position_tolerance
 
 # angular tolerance at the goal point (the last point) [rad]
 float32 goal_angle_tolerance
+
+# target distance between robot and wall during wall following [m]
+float32 target_wall_distance
+
+# when traveling farther than this threshold distance, the robot does not use the wall following objective anymore [m]
+float32 wall_following_off_traveling_distance_threshold
 ---
 ---
 geometry_msgs/PoseStamped base_position
