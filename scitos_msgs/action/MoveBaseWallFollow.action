@@ -1,11 +1,15 @@
-# an image of the full map of the environment
+# an image of the full map of the environment (CV_8UC1, 0=obstacles, 255=free space)
 sensor_msgs/Image map
 
-# an image depicting a map of the area which is covered by the path or which the robot is allowed to drive at for obstacle avoidance
+# an image depicting a map of the area which is covered by the path or which the robot is allowed to drive at for obstacle avoidance (CV_8UC1, 0=obstacles, 255=free space)
 sensor_msgs/Image area_map
 
-# an (optional) image showing the already covered areas (0=not covered, 255=covered)
+# an (optional) image showing the already covered areas (CV_8UC1, 0=not covered, 255=covered)
 sensor_msgs/Image coverage_map
+
+# map properties of all three provided maps
+float32 map_resolution					# the resolution of the map in [meter/cell]
+geometry_msgs/Pose map_origin			# the origin of the map in [meter], NOTE: rotations are not supported for now
 
 # position tolerance at each waypoint, i.e. the acceptable deviation from the given path [m]
 float32 path_tolerance
