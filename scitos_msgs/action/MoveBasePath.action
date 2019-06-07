@@ -13,5 +13,7 @@ float32 goal_position_tolerance
 # angular tolerance at the goal point (the last point) [rad]
 float32 goal_angle_tolerance
 ---
+# index of the last visited point (the index of the last point if no interruption)
+int32 last_visited_index
 ---
 geometry_msgs/PoseStamped base_position
