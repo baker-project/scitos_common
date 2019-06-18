@@ -1,0 +1,11 @@
+# goal point
+geometry_msgs/PoseStamped target_pose
+
+# position tolerance at the goal point (the last point) [m]
+float32 goal_position_tolerance
+
+# angular tolerance at the goal point (the last point) [rad]
+float32 goal_angle_tolerance 
+---
+---
+geometry_msgs/PoseStamped base_position

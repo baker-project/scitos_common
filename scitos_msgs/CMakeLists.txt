@@ -22,6 +22,7 @@ find_package(catkin REQUIRED COMPONENTS actionlib_msgs geometry_msgs message_gen
 add_action_files(
   DIRECTORY action
   FILES
+  	MoveBase.action
     MoveBasePath.action
     MoveBaseWallFollow.action
 )
