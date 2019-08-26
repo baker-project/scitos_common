@@ -14,6 +14,6 @@ float32 goal_position_tolerance
 float32 goal_angle_tolerance
 ---
 # index of the point planned. target_poses.size() if the last one
-int32 last_visited_index
+int32 last_planned_point_index
 ---
 geometry_msgs/PoseStamped base_position
